@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- CAPA DE PRIMER PLANO PROVISIONAL · Cauca rural. Transparente; va delante del personaje para dar profundidad. -->
+  <defs>
+    <filter id="b8"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="b3"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f8a43"/><stop offset="1" stop-color="#22562c"/></linearGradient>
+    <linearGradient id="vig" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#1e3a22" stop-opacity=".45"/><stop offset="1" stop-color="#1e3a22" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="0" y="860" width="1500" height="140" fill="url(#vig)"/>
+  <!-- rama de cafe desenfocada arriba-izquierda -->
+  <g filter="url(#b8)" opacity=".85">
+    <path d="M-30 90 Q140 120 260 60" stroke="#2c5a2c" stroke-width="12" fill="none"/>
+    <ellipse cx="90" cy="130" rx="78" ry="30" fill="url(#leaf)" transform="rotate(25 90 130)"/><ellipse cx="210" cy="100" rx="70" ry="26" fill="url(#leaf)" transform="rotate(-18 210 100)"/>
+    <circle cx="150" cy="150" r="13" fill="#d8382f"/><circle cx="188" cy="144" r="11" fill="#c8312b"/>
+  </g>
+  <!-- hojas de platano abajo-izquierda -->
+  <g filter="url(#b3)">
+    <path d="M-20 1010 Q60 820 250 770 Q190 880 160 1010Z" fill="url(#leaf)"/><path d="M-20 1010 Q80 900 300 880 Q220 950 200 1010Z" fill="#2d6e36"/>
+    <path d="M0 1010 Q40 900 130 830" stroke="#a4d18a" stroke-width="3" fill="none" opacity=".5"/>
+  </g>
+  <!-- helechos abajo-derecha -->
+  <g filter="url(#b3)">
+    <path d="M1520 1010 Q1440 850 1250 820 Q1300 910 1330 1010Z" fill="url(#leaf)"/><path d="M1520 1010 Q1420 920 1210 930 Q1280 975 1300 1010Z" fill="#2d6e36"/>
+  </g>
+  <!-- pasto -->
+  <g stroke="#2f6a34" stroke-width="5" stroke-linecap="round" opacity=".9">
+    <path d="M360 1000 q4 -40 -6 -70 M376 1000 q10 -30 14 -60 M392 1000 q-2 -26 -14 -48"/>
+    <path d="M930 1000 q4 -36 -6 -66 M946 1000 q10 -26 14 -52 M962 1000 q-2 -22 -14 -42"/>
+    <path d="M1100 1000 q-6 -34 4 -60 M1116 1000 q8 -26 18 -48"/>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Frequency</title>
+  <meta name="description" content="Alternativas de comunicación cuando la conectividad falla: Cauca rural y Cali urbana.">
+  <meta name="theme-color" content="#14303a">
+  <meta property="og:title" content="Free Frequency">
+  <meta property="og:description" content="Cuando la señal se apaga, la comunicación no. Explora alternativas de comunicación en el Cauca rural y en Cali tras un sismo.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-view="home">
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="Free Frequency, volver al inicio">Free<i>Frequency</i></a>
+    <nav class="tabs" id="tabs" aria-label="Secciones"></nav>
+    <a class="top-link" href="#zonas" id="top-select">Menú principal</a>
+    <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Change the language to English" lang="en">EN</button>
+    <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="true" aria-label="Sonido activado. Pulsa para silenciar"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="sp" d="M4 9v6h4l5 4V5L8 9H4z"/><path class="sw" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12"/><path class="sx" d="M16 9l5 6M21 9l-5 6"/></svg></button>
+  </header>
+
+  <noscript><p style="padding:5rem 1.5rem;font-family:Georgia,serif">Free Frequency necesita JavaScript para mostrar la experiencia interactiva.</p></noscript>
+  <main>
+    <!-- 1 · PORTADA -->
+    <section id="view-home" class="view" aria-labelledby="home-title">
+      <div class="home-glow" aria-hidden="true"></div>
+      <div class="rings" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+        <text><textPath href="#circ">SIN SEÑAL · SIN SILENCIO · SIN SEÑAL · SIN SILENCIO ·</textPath></text>
+      </svg>
+      <div class="home-copy">
+        <p class="kicker">Comunicación cuando la red falla · Colombia</p>
+        <h1 id="home-title">Free <em>Frequency</em></h1>
+        <p class="home-phrase">Cuando la señal se apaga, la comunicación no.</p>
+        <a class="cta" href="#zonas" id="btn-start">Comenzar</a>
+        <p class="home-note">Experiencia educativa: ninguna alternativa garantiza la comunicación. Combínalas y prepárate con tiempo.</p>
+      </div>
+      <img class="home-char left" src="assets/characters/cauca.png" alt="" aria-hidden="true">
+      <img class="home-char right" src="assets/characters/cali.png" alt="" aria-hidden="true">
+      <div class="home-ground" aria-hidden="true"></div>
+    </section>
+
+    <!-- 2a · SELECTOR DE ZONA -->
+    <section id="view-zones" class="view" aria-labelledby="zones-title" hidden></section>
+
+    <!-- 2b · MENÚ DE OBJETOS DE LA ZONA -->
+    <section id="view-select" class="view" aria-labelledby="select-title" hidden>
+      <div class="home-glow" aria-hidden="true"></div>
+      <div class="rings" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <header class="hub-head">
+        <p class="kicker" id="select-kicker">Tres objetos · tres recorridos</p>
+        <h1 id="select-title">Elige un objeto para empezar</h1>
+        <p class="hub-sub">Pasa el cursor sobre un objeto para ver una vista previa. Haz clic o toca para seleccionarlo y pulsa «Comenzar recorrido» para abrir su recorrido educativo.</p>
+        <p class="hub-over" id="select-over"></p>
+        <a class="hub-zones" href="#zonas">← Cambiar de zona</a>
+      </header>
+      <div class="hub" id="hub"></div>
+    </section>
+
+    <!-- 3 · SECUENCIA DE LA ALTERNATIVA (js/sequence.js): objeto → manos → personaje → información -->
+    <section id="view-seq" class="view" aria-labelledby="seq-h1" hidden>
+      <h1 id="seq-h1" class="sr-only"></h1>
+      <div class="seq" id="seq"></div>
+    </section>
+
+    <!-- 4 · FINAL -->
+    <section id="view-final" class="view" aria-labelledby="final-title" hidden></section>
+  </main>
+
+  <div class="sweep" id="sweep" aria-hidden="true"></div>
+
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/lang-en.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/hub.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/tuner.js"></script>
+  <script src="js/scenery.js"></script>
+  <script src="js/sms-sim.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/seq-modules.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

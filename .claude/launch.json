@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "free-frequency", "runtimeExecutable": "node", "runtimeArgs": ["serve.js"], "port": 5190, "autoPort": true }
+  ]
+}

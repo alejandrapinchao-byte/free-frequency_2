@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" preserveAspectRatio="xMidYMid slice">
+  <!-- CAPA DE PRIMER PLANO PROVISIONAL · Cali urbana. Transparente; va delante del personaje. -->
+  <defs>
+    <filter id="b8"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="b2"><feGaussianBlur stdDeviation="2"/></filter>
+    <linearGradient id="vig" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2a1830" stop-opacity=".5"/><stop offset="1" stop-color="#2a1830" stop-opacity="0"/></linearGradient>
+    <linearGradient id="lf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b8a4a"/><stop offset="1" stop-color="#1f5a33"/></linearGradient>
+  </defs>
+  <rect x="0" y="860" width="1500" height="140" fill="url(#vig)"/>
+  <!-- hojas de palma desenfocadas arriba-derecha -->
+  <g filter="url(#b8)" opacity=".85">
+    <path d="M1540 -10 Q1380 20 1230 130 Q1380 110 1540 90Z" fill="url(#lf)"/><path d="M1540 40 Q1420 110 1320 250 Q1450 190 1540 170Z" fill="#2a7040"/>
+  </g>
+  <!-- escombros pequenos abajo-izquierda -->
+  <g filter="url(#b2)">
+    <path d="M-10 1010 L-10 930 L60 900 L120 930 L180 910 L240 960 L270 1010Z" fill="#8a6a6a"/>
+    <path d="M-10 1010 L40 960 L100 970 L150 1010Z" fill="#a98a86"/>
+    <rect x="110" y="900" width="60" height="20" fill="#b5523a" transform="rotate(-18 140 910)"/>
+  </g>
+  <!-- escombros abajo-derecha -->
+  <g filter="url(#b2)">
+    <path d="M1510 1010 L1510 940 L1440 920 L1380 950 L1330 940 L1290 1010Z" fill="#8a6a6a"/>
+    <path d="M1510 1010 L1450 975 L1390 985 L1350 1010Z" fill="#a98a86"/>
+  </g>
+  <!-- particulas de polvo -->
+  <g fill="#ffe2b0" opacity=".5">
+    <circle cx="320" cy="660" r="3"/><circle cx="520" cy="540" r="2.5"/><circle cx="760" cy="720" r="3.5"/><circle cx="980" cy="600" r="2.5"/><circle cx="1180" cy="700" r="3"/><circle cx="150" cy="520" r="2"/><circle cx="640" cy="430" r="2"/>
+  </g>
+</svg>
